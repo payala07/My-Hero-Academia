@@ -1,5 +1,11 @@
 # MyHeroAcademia
 
+My Hero Academia (Japanese: 僕のヒーローアカデミア, Hepburn: Boku no Hīrō Akademia) is a Japanese superhero manga series written and illustrated by Kōhei Horikoshi. The story follows Izuku Midoriya, a boy born without superpowers in a world where they have become commonplace, but who still dreams of becoming a superhero himself. He is scouted by All Might, Japan's greatest hero, who chooses Midoriya as his successor after recognizing his potential, and helps to enroll him in a prestigious high school for superheroes in training. 
+
+# Project
+
+This project takes a little twist on the Angular tutorial "Tour of Heroes".
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 
 ## Development server
