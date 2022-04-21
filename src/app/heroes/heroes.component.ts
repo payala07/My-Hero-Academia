@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Hero } from '../models/hero.model';
+import { HEROES } from '../mock-heroes';
 
 @Component({
   selector: 'app-heroes',
@@ -7,13 +7,7 @@ import { Hero } from '../models/hero.model';
   styleUrls: ['./heroes.component.scss']
 })
 export class HeroesComponent implements OnInit {
-  hero: Hero = {
-    id: 1,
-    name: 'Deku',
-    quirk: 'One for All',
-    imagePath: 'https://upload.wikimedia.org/wikipedia/en/d/db/Izuku_Midoriya_%28My_Hero_Academia_character%29.png',
-    class: '1A'
-  };
+  heroes= HEROES;
 
   constructor() { }
 

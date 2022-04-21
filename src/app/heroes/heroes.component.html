@@ -1,20 +1,28 @@
 <div class="container">
-    <div class="card" style="width: 10rem;">
-        <img class="card-img-top" src="{{hero.imagePath}}" alt="{{hero.name}}">
-        <div class="card-body">
-        <h5 class="card-title">{{hero.name}}</h5>
-                <div>
-                    <span>id:  
-                    </span>{{hero.id}}
+        <div class="card mb-3" style="width: 10rem;">
+            <ul class="heroes">
+            <li *ngFor="let hero of heroes">
+            <img class="card-img-top" src="{{hero.imagePath}}" alt="{{hero.name}}">
+                <div class="card-body">
+                    <h5 class="card-title" id="name" [(ngModel)]="hero.name" placeholder="name">{{hero.name}} </h5>
+                        <div>
+                            <span>id:  
+                            </span>{{hero.id}}
+                        </div>
+                        <div>
+                            <span>alias:  
+                            </span>{{hero.alias}}
+                        </div>
+                        <div>
+                            <span>quirk: 
+                            </span>{{hero.quirk}}
+                        </div>
+                        <div>
+                            <span>class: 
+                            </span>{{hero.class}}
+                        </div>
                 </div>
-                <div>
-                    <span>quirk: 
-                    </span>{{hero.quirk}}
-                </div>
-                <div>
-                    <span>class: 
-                    </span>{{hero.class}}
-                </div>
-        </div>
+            </li>
+            </ul>
     </div>
 </div>
