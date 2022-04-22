@@ -1,0 +1,16 @@
+<div *ngIf="hero">
+    <h2 class="card-title">{{hero.name | uppercase}} Details</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{{hero.imagePath}}" class="card-img img-responsive img" alt="{{hero.name}}">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">      
+                <p class="card-text">id: {{hero.id}}</p>
+                <p class="card-text">Hero name: {{hero.alias}}</p>
+                <p class="card-text">Hero quirk: {{hero.quirk}}</p>
+                <p class="card-text">Hero class: {{hero.class}}</p>
+            </div>
+        </div>
+    </div>
+</div>

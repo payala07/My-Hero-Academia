@@ -1,28 +1,20 @@
-<div class="container">
-        <div class="card mb-3" style="width: 10rem;">
-            <ul class="heroes">
+<div class="row ">
+    <div class="col-md-5 ">
+        <h2 class="col-height">Heroes</h2>
+        <ul class="heroes">
             <li *ngFor="let hero of heroes">
-            <img class="card-img-top" src="{{hero.imagePath}}" alt="{{hero.name}}">
-                <div class="card-body">
-                    <h5 class="card-title" id="name" [(ngModel)]="hero.name" placeholder="name">{{hero.name}} </h5>
-                        <div>
-                            <span>id:  
-                            </span>{{hero.id}}
-                        </div>
-                        <div>
-                            <span>alias:  
-                            </span>{{hero.alias}}
-                        </div>
-                        <div>
-                            <span>quirk: 
-                            </span>{{hero.quirk}}
-                        </div>
-                        <div>
-                            <span>class: 
-                            </span>{{hero.class}}
-                        </div>
-                </div>
+                <button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)">
+                    <span class="badge">{{hero.id}}</span>
+                    <span class="name">{{hero.name}}</span>
+                </button>
             </li>
-            </ul>
+        </ul>
+    </div>
+    <div class="col-md-7">
+        <div class="card mb-3 col-height" style="max-width: 540px;">
+                <div class="row no-gutters">
+                   <app-heroes-details [hero]="selectedHero"></app-heroes-details> 
+              </div>
+        </div>
     </div>
 </div>
