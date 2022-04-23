@@ -10,7 +10,7 @@ For more information on Angular "Tour of Heroes": https://angular.io/tutorial
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 
-<img src="assets/images/page-view.png" width="128"/>
+![page-view](assets/images/page-view.png)
 
 ## Development server
 
