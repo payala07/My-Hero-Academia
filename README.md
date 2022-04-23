@@ -6,6 +6,8 @@ My Hero Academia (Japanese: 僕のヒーローアカデミア, Hepburn: Boku no 
 
 This project takes a little twist on the Angular tutorial "Tour of Heroes".
 
+For more information on Angular "Tour of Heroes": https://angular.io/tutorial
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 
 ## Development server
